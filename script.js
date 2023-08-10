@@ -1,5 +1,5 @@
 const button = document.getElementById('button');
-const audioElement = document.getElementById('audio')
+const audio = document.getElementById('audio')
 const apiKey = "abb06cd6e72745a79e085c30df3aa0a2"
 // VoiceRSS Javascript SDK
 const toggleButton = () => {
@@ -36,7 +36,7 @@ const getJokes = async () => {
     }
 }
 button.onclick = getJokes;
-audioElement.onended = toggleButton;
+audio.onended = toggleButton;
 
 
 
